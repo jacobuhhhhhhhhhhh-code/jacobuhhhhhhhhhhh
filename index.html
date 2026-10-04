@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>L- | Programming Language</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="grid"></div>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <a class="logo" href="#">L<span>-</span></a>
+
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#examples">Examples</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="prompt">
+                <span>user@l-machine</span>:~$
+                <b> ./l</b>
+            </div>
+
+            <div class="hero-logo">
+                L<span>-</span>
+            </div>
+
+            <h1>
+                A programming language
+                <br>
+                <span>built from scratch.</span>
+            </h1>
+
+            <p>
+                Simple syntax. Real architecture.
+                <br>
+                Lexer. Parser. AST. Interpreter.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#examples" class="button main-button">
+                    GET STARTED →
+                </a>
+
+                <a href="#features" class="button">
+                    EXPLORE L-
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES -->
+
+        <section id="features" class="section">
+
+            <div class="section-title">
+                <span>[01]</span> FEATURES
+            </div>
+
+            <h2>
+                Small language.
+                <br>
+                <span>Real foundations.</span>
+            </h2>
+
+            <div class="feature-grid">
+
+                <div class="feature">
+                    <div class="feature-number">01</div>
+                    <h3>Lexer</h3>
+                    <p>
+                        Turns L- source code into tokens
+                        that the language can understand.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-number">02</div>
+                    <h3>Parser</h3>
+                    <p>
+                        Converts tokens into structured
+                        language nodes.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-number">03</div>
+                    <h3>AST</h3>
+                    <p>
+                        L- uses an abstract syntax tree
+                        to represent programs.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-number">04</div>
+                    <h3>Interpreter</h3>
+                    <p>
+                        Executes L- programs directly
+                        through the interpreter.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXAMPLES -->
+
+        <section id="examples" class="section">
+
+            <div class="section-title">
+                <span>[02]</span> EXAMPLES
+            </div>
+
+            <h2>
+                Click a file.
+                <br>
+                <span>Open the code.</span>
+            </h2>
+
+
+            <div class="file-grid">
+
+
+                <!-- FILE 1 -->
+
+                <button class="code-card" onclick="openCode('hello')">
+
+                    <div class="file-top">
+                        <span class="dot"></span>
+                        <span class="filename">hello.l</span>
+                        <span class="arrow">↗</span>
+                    </div>
+
+                    <div class="mini-code">
+                        <span class="green">SL</span>
+                        (<span class="purple">"Hello world!"</span>)
+                    </div>
+
+                    <div class="file-bottom">
+                        L- SOURCE
+                    </div>
+
+                </button>
+
+
+                <!-- FILE 2 -->
+
+                <button class="code-card" onclick="openCode('function')">
+
+                    <div class="file-top">
+                        <span class="dot"></span>
+                        <span class="filename">function.l</span>
+                        <span class="arrow">↗</span>
+                    </div>
+
+                    <div class="mini-code">
+                        <span class="green">FUNC</span>(greet)
+                        <br>
+                        &nbsp;&nbsp;<span class="blue">SL</span>(...)
+                        <br>
+                        <span class="green">END</span>
+                    </div>
+
+                    <div class="file-bottom">
+                        L- SOURCE
+                    </div>
+
+                </button>
+
+
+                <!-- FILE 3 -->
+
+                <button class="code-card" onclick="openCode('loop')">
+
+                    <div class="file-top">
+                        <span class="dot"></span>
+                        <span class="filename">loop.l</span>
+                        <span class="arrow">↗</span>
+                    </div>
+
+                    <div class="mini-code">
+                        <span class="green">LOOP</span>(5)
+                        <br>
+                        &nbsp;&nbsp;<span class="blue">SL</span>(...)
+                        <br>
+                        <span class="green">END</span>
+                    </div>
+
+                    <div class="file-bottom">
+                        L- SOURCE
+                    </div>
+
+                </button>
+
+
+                <!-- FILE 4 -->
+
+                <button class="code-card" onclick="openCode('condition')">
+
+                    <div class="file-top">
+                        <span class="dot"></span>
+                        <span class="filename">condition.l</span>
+                        <span class="arrow">↗</span>
+                    </div>
+
+                    <div class="mini-code">
+                        <span class="green">IF</span>(x &gt; 5)
+                        <br>
+                        &nbsp;&nbsp;<span class="blue">SL</span>(...)
+                        <br>
+                        <span class="green">END</span>
+                    </div>
+
+                    <div class="file-bottom">
+                        L- SOURCE
+                    </div>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about" class="section about">
+
+            <div class="section-title">
+                <span>[03]</span> ABOUT
+            </div>
+
+            <h2>
+                From source code
+                <br>
+                <span>to execution.</span>
+            </h2>
+
+            <p>
+                L- is an independent programming language
+                built from the ground up. It is designed to
+                keep syntax simple while using real compiler
+                architecture underneath.
+            </p>
+
+            <div class="terminal">
+
+                <div class="terminal-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <label>terminal</label>
+                </div>
+
+                <div class="terminal-body">
+
+                    <div>
+                        <span class="green-text">user@l-machine</span>:~$
+                        ./l hello.l
+                    </div>
+
+                    <br>
+
+                    <div class="output">
+                        Hello world!
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <span class="green-text">user@l-machine</span>:~$
+                        _
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- CODE VIEWER -->
+
+    <div id="codeViewer" class="code-viewer">
+
+        <div class="viewer-background"></div>
+
+        <div class="viewer">
+
+            <div class="viewer-header">
+
+                <span id="viewerTitle">
+                    file.l
+                </span>
+
+                <button onclick="closeCode()">
+                    ESC ×
+                </button>
+
+            </div>
+
+            <pre id="viewerCode"></pre>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <div>
+            <strong>L-</strong>
+            Programming Language
+        </div>
+
+        <div>
+            Built from scratch.
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        const files = {
+
+            hello: {
+                title: "hello.l",
+                code:
+`SL("Hello world!")`
+            },
+
+            function: {
+                title: "function.l",
+                code:
+`FUNC(greet)
+    SL("Hello from L-")
+END
+
+CALL(greet)`
+            },
+
+            loop: {
+                title: "loop.l",
+                code:
+`LOOP(5)
+    SL("Hello")
+END`
+            },
+
+            condition: {
+                title: "condition.l",
+                code:
+`SET(x, 10)
+
+IF(x > 5)
+    SL("x is greater than 5")
+END`
+            }
+
+        };
+
+
+        function openCode(file) {
+
+            const viewer = document.getElementById("codeViewer");
+
+            const title = document.getElementById("viewerTitle");
+
+            const code = document.getElementById("viewerCode");
+
+            title.textContent = files[file].title;
+
+            code.textContent = files[file].code;
+
+            viewer.classList.add("active");
+
+            document.body.style.overflow = "hidden";
+        }
+
+
+        function closeCode() {
+
+            const viewer = document.getElementById("codeViewer");
+
+            viewer.classList.remove("active");
+
+            document.body.style.overflow = "";
+        }
+
+
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "Escape") {
+                closeCode();
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
